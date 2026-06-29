@@ -18,6 +18,11 @@ int main() {
 
     return 0;
 }
+
+/* Below is the template to return a LL, when we need to create a LL we must create every node
+ListNode* dummy = new ListNode(0);
+ListNode* tail = dummy; */
+
 // Below is a two sum example
 
 /* #include <bits/stdc++.h>
