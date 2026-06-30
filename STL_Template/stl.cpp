@@ -157,7 +157,7 @@ q.empty();
 /**********************************************************************
 8. PRIORITY QUEUE (Heap)
 
-Default -> Max Heap
+Default -> Max Heap i.e. element with highest priority stored first 
 
 Operations:
 push()      O(logN)
@@ -210,7 +210,7 @@ s.upper_bound(6);
 
 
 /**********************************************************************
-10. MULTISET
+10. MULTISET - unlike sets Multiple values can be stored , but ordered like a set
 Sorted
 Duplicates Allowed
 **********************************************************************/
@@ -227,7 +227,7 @@ ms.count(1);
 
 
 /**********************************************************************
-11. UNORDERED_SET
+11. UNORDERED_SET - Unique values are stored like a set but not ordered
 Hash Table
 
 Average O(1)
@@ -245,7 +245,7 @@ us.erase(5);
 
 
 /**********************************************************************
-12. MAP
+12. MAP - Stores Unique Keys in sorted order
 Sorted Key-Value
 
 O(logN)
@@ -283,7 +283,7 @@ mm.insert({1,200});
 
 
 /**********************************************************************
-14. UNORDERED_MAP
+14. UNORDERED_MAP Stores Unique Keys in unsorted order
 
 Average O(1)
 
