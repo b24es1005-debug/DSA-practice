@@ -23,7 +23,7 @@ public:
     }
 };
 
-class Solution {//Iterative Solution
+class Solution {//TABULATION: Iterative Solution
 public:
     int lengthOfLIS(vector<int>& nums) {
         int n = nums.size();
@@ -32,9 +32,9 @@ public:
         vector<int> dp(n, 1);  // dp[i] = LIS ending at index i
         int maxLen = 1;
         
-        for (int i = 1; i < n; i++) {
-            for (int j = 0; j < i; j++) {
-                if (nums[i] > nums[j]) {
+        for (int i = 1; i < n; i++) {//for each position i 
+            for (int j = 0; j < i; j++) {//check all previous position j
+                if (nums[i] > nums[j]) {//satisfying the LIS
                     dp[i] = max(dp[i], dp[j] + 1);
                 }
             }
