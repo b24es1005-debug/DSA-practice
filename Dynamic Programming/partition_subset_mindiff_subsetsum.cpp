@@ -1,4 +1,7 @@
-class Solution {
+class Solution {/*Rule of thumb:
+If the DP stores existence (true/false), initialize with true.
+If the DP stores a count, initialize with the number of ways (1 for the empty subset) and
+let the recurrence compute additional ways, especially when zeros are present. i.e we dont initialize the base case dp[i][0] here*/
 public:
     int minimumDifference(vector<int>& nums) {
         int n = nums.size();
